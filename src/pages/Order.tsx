@@ -10,7 +10,6 @@ export default function Order() {
   const [house, setHouse] = useState('')
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
-  const [orderId, setOrderId] = useState<string | null>(null)
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -19,10 +18,7 @@ export default function Order() {
     setLoading(true)
     submitOrder({ name, phone, house })
       .then((res) => {
-        if (res.ok) {
-          setOrderId(res.id)
-          setSubmitted(true)
-        }
+        if (res.ok) setSubmitted(true)
       })
       .finally(() => setLoading(false))
   }
@@ -94,10 +90,8 @@ export default function Order() {
         open={submitted}
         title="Order received"
         message="Thanks! We'll contact you soon."
-        orderId={orderId}
         onClose={() => {
           setSubmitted(false)
-          setOrderId(null)
         }}
       />
     </div>

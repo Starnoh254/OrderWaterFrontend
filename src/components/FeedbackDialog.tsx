@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Button from './Button'
 import Spinner from './Spinner'
 import { submitFeedback } from '../lib/mockApi'
@@ -7,7 +7,7 @@ type Props = {
   open: boolean
   title?: string
   message?: string
-  orderId?: string | null
+  // orderId removed: feedback endpoint only accepts a message
   onClose: () => void
 }
 
@@ -15,7 +15,7 @@ export default function FeedbackDialog({
   open,
   title = 'Thank you!',
   message,
-  orderId,
+
   onClose,
 }: Props) {
   if (!open) return null
