@@ -6,7 +6,7 @@ import Order from './pages/Order'
 function App() {
   return (
     <Routes>
-      <Route path="/order" element={<Order />} />
+      <Route path="/" element={<Order />} />
     </Routes>
   )
 }
