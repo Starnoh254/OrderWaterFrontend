@@ -26,7 +26,7 @@ export default function Order() {
   return (
     <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow">
       <h2 className="text-2xl font-semibold text-primary mb-4">
-        Place an Order
+        Place your Water Order
       </h2>
 
       {submitted ? (
