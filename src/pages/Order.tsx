@@ -56,7 +56,7 @@ export default function Order() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="w-full border rounded px-3 py-2"
-              placeholder="e.g. +1 555 555 5555"
+              placeholder="e.g. 0700 000 000"
               required
             />
           </div>
