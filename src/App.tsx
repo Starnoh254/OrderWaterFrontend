@@ -6,7 +6,7 @@ import Orders from './pages/Orders'
 function App() {
   return (
     <div>
-      {/* <header className="p-4 bg-white shadow-sm">
+      <header className="p-4 bg-white shadow-sm">
         <nav className="max-w-4xl mx-auto flex items-center gap-4">
           <Link to="/" className="text-primary font-medium">
             New Order
@@ -15,7 +15,7 @@ function App() {
             All Orders
           </Link>
         </nav>
-      </header> */}
+      </header>
 
       <main className="max-w-4xl mx-auto p-4">
         <Routes>
