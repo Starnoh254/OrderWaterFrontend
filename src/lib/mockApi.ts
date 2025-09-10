@@ -4,6 +4,7 @@ export type OrderPayload = {
   name: string
   phone: string
   house: string
+  amount: string
 }
 
 export function submitOrder(
